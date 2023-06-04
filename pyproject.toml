@@ -1,0 +1,29 @@
+
+[project]
+name = "dnaught"
+version = "0.1.0"
+description = "UI for biological exploration"
+authors = [
+    {name = "Alex Bondarenko", email = "abondarenko101@gmail.com"},
+]
+dependencies = [
+    "huggingface-hub>=0.15.1",
+    "requests>=2.31.0",
+    "datasets>=2.12.0",
+    "nomic>=1.1.6",
+    "gradio>=3.33.1",
+    "BioPython>=1.81",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "torch>=2.0.1",
+    "nomic>=1.1.6",
+]
