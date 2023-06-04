@@ -29,7 +29,9 @@ if __name__ == '__main__':
         data=[protein_info(seq) for seq in sequences],
         name='svm',
         id_field='sequence',
-        reset_project_if_exists=True,
+        #reset_project_if_exists=True,
+        add_datums_if_exists=True,
         build_topic_model=True,
+        is_public=True,
     )
     print(project)
